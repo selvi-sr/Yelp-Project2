@@ -1,0 +1,4 @@
+1. Go to the folder location in terminal > Start app server python app.py
+2. Open another terminal window > Go to project location > Start web server python -m http.server
+3. Add chrome / firefox browser CORS extn > Enable CORS extension in the browser
+4. Launch http://localhost:8000/
