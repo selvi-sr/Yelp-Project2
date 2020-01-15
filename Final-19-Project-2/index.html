@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Yelp Me Out - Project 2</title>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+      </head>
+
+<body>
+     <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+     <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="dash.html"> DASHBOARD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="coffee.html">COFFEE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ADDITIONAL VISUALS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="comparison.html"> SF vs ATL Comparison Charts</a>
+                <a class="dropdown-item" href="leaflet.html"> Leaflet </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+      </nav>
+   <!-- END OF NAV BAR -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://www.modern.place/wp-content/uploads/2018/03/Shade-Burger-YOD-studio-1-600x500.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.gethypervisual.com/images/shopify/d7180ea1-f429-4adb-bf76-6c4abe6c4b27/89e2_DSC_7481.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://pixel.nymag.com/imgs/listings/restaurants/the-modern/the-modern-01.w1200.h630.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+      <div class="container-home">
+        <section class="row">
+          <div class="col-md-6">
+            <article class="description-content">
+              <h1 class="description-header">Project Summary</h1>
+              <hr class="description-hr"/>
+              <p>The purpose of this project is to provide various options for our end user to get rating/review based information about food buisnesses in 11 metropolitans area in North America and coffee shops in Atlanta and SFO.</p>
+              <p>We utilized Yelp API to form our analysis and visuals of coffee shops in Atlanta and San Francisco. The Yelp API was limited on information we could use to create multiple visuals and provide vast options for analysis. 
+                As a result we found a Kaggle Yelp dataset which provided the additional information needed.</p>
+            <p>To create this project we used Python Flask powered restful API, HTML/CSS, JavaScript, MongoDB, Leaflet, Anime JS library and D3.</p>
+            </article>
+          </div>
+          <div class="col-md-6">
+              <article class="description-content">
+                <h1 class="description-header2"> Team Members</h1>
+                <hr class="description-hr"/>
+                <section class="row">
+                    <div class="col-md-4">
+                        <img src="photos/janita.png" alt="Janita">
+                        <p> Janita Brock</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="photos/ola.png" alt="Ola">
+                        <p> Ola Browne</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="photos/parul.png" alt="Parul">
+                        <p> Parul Garg</p>
+                    </div>
+                </section>
+                <!-- second row -->
+                <section class="row">
+                    <div class="col-md-4">
+                        <img src="photos/reza.png" alt="Reza">
+                        <p> Reza Gharahgozly</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="photos/sandy.png" alt="Sandy">
+                        <p> Sandy Lake</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="photos/selvi.png" alt="Selvi">
+                        <p> Selvi Ramalingam</p>
+                    </div>
+                </section>
+              </article>
+          </div>   
+
+              
+          </div>
+        <section>
+  
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>More Yelp</title>
+
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+        <!-- End new add -->
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
+    </head>
+
+    <body>
+        <!-- NAV BAR -->
+        ​<nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="dash.html"> DASHBOARD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="coffee.html">COFFEE</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ADDITIONAL VISUALS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="comparison.html"> SF vs ATL Comparison Charts</a>
+                    <a class="dropdown-item" href="leaflet.html"> Leaflet</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <div>
+        </nav>
+        <!-- NEW ADD -->
+        <div class="container-home">
+          <div class="row">
+            <div class="col-md-8">
+              <h1 class="ml1">
+                <span class="text-wrapper">
+                  <span class="line line1"></span>
+                  <span class="letters">NEED YELP</span>
+                  <span class="line line2"></span>
+                </span>
+              </h1>
+            </div>
+          </div>
+      </div>
+        <!-- END NEW ADD -->
+
+        <!-- <div class="container"> -->
+            <!-- <div class="row"> -->
+            <!-- </div> -->
+            <div class="row">
+                <div class="col-md-4">
+                  <div id="ATLPie"></div>
+                </div>
+              <div class="col-md-8">
+                <div id="ATLbubble"></div>
+              </div>
+            </div>
+            <hr class="description-hr"/>
+          <!-- </div> -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="SFOPie"></div>
+                  </div>
+                <div class="col-md-8">
+                    <div id="SFObubble"></div>
+                </div>
+          </div>
+        </div>
+          
+        <!-- NEW ADDLeaflet JavaScript -->
+          <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+          <script type="text/javascript" src="./Anime/anime.js"></script>
+        <!-- END NEW ADD -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+          <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+          <script src="./bubble/bubble.js"></script>
+          <script src="./pie/pie.js"></script>
+            
+    </body>
+
+</html>
